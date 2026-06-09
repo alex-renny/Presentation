@@ -1363,3 +1363,57 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Website Button Styles */
+.website-button-container {
+  margin: 20px 0 25px;
+}
+
+.website-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(97, 218, 251, 0.15), rgba(97, 218, 251, 0.05));
+  border: 1.5px solid rgba(97, 218, 251, 0.4);
+  padding: 14px 32px;
+  border-radius: 50px;
+  color: #61dafb;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.5px;
+}
+
+.website-btn:hover {
+  background: linear-gradient(135deg, rgba(97, 218, 251, 0.25), rgba(97, 218, 251, 0.1));
+  border-color: #61dafb;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(97, 218, 251, 0.3);
+  gap: 15px;
+}
+
+.website-btn .external-icon {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.website-btn:hover .external-icon {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* Responsive for Website Button */
+@media (max-width: 768px) {
+  .website-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    gap: 8px;
+  }
+  
+  .website-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
